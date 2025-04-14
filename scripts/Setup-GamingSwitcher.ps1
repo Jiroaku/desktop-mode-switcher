@@ -5,18 +5,30 @@ $nircmd = "D:\Dev Program Files\NirCmd\nircmd.exe"
 
 # === CREATE GAMING MODE SCRIPT ===
 $gamingScript = @"
+# Kill background tools
 Stop-Process -Name "Windhawk" -Force -ErrorAction SilentlyContinue
 Stop-Process -Name "PowerToys" -Force -ErrorAction SilentlyContinue
 Stop-Process -Name "yasb" -Force -ErrorAction SilentlyContinue
+Stop-Process -Name "Everything" -Force -ErrorAction SilentlyContinue
+Stop-Process -Name "cute-borders" -Force -ErrorAction SilentlyContinue
+Stop-Process -Name "wallpaper32" -Force -ErrorAction SilentlyContinue
+
+# Set gaming resolution
 & "$nircmd" setdisplay 1440 1080 32 144
 "@
 $gamingScript | Set-Content -Path $gamingScriptPath -Encoding UTF8
-
+6
 # === CREATE NORMAL MODE SCRIPT ===
 $normalScript = @"
-Start-Process "D:\Dev Program Files\Windhawk\windhawk.exe"
-Start-Process "D:\Dev Program Files\PowerToys\PowerToys.exe"
-Start-Process "D:\Dev Program Files\Yasb\yasb.exe"
+# Reopen background tools minimized
+Start-Process "D:\Dev Program Files\Windhawk\windhawk.exe" -WindowStyle Minimized
+Start-Process "D:\Dev Program Files\PowerToys\PowerToys.exe" -WindowStyle Minimized
+Start-Process "D:\Dev Program Files\Yasb\yasb.exe" -WindowStyle Minimized
+Start-Process "D:\Dev Program Files\Everything\Everything.exe" -WindowStyle Minimized
+Start-Process "C:\Users\Straker\.cuteborders\cute-borders.exe" -WindowStyle Minimized
+Start-Process "E:\Programs\Steam\steamapps\common\wallpaper_engine\wallpaper32.exe" -WindowStyle Minimized
+
+# Set normal resolution
 & "$nircmd" setdisplay 2560 1440 32 144
 "@
 $normalScript | Set-Content -Path $normalScriptPath -Encoding UTF8
