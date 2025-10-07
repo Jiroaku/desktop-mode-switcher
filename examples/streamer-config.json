@@ -1,0 +1,111 @@
+{
+  "version": "1.0.0",
+  "nircmd_path": "C:\\Tools\\NirCmd\\nircmd.exe",
+  "gaming_mode": {
+    "name": "Streaming Mode",
+    "description": "Optimizes system for streaming while gaming",
+    "resolution": {
+      "width": 1920,
+      "height": 1080,
+      "color_depth": 32,
+      "refresh_rate": 60
+    },
+    "processes_to_kill": [
+      "Chrome",
+      "Firefox",
+      "Edge",
+      "Teams",
+      "Slack",
+      "Zoom",
+      "Skype",
+      "Notion",
+      "Obsidian",
+      "OneNote",
+      "Adobe",
+      "Photoshop",
+      "Illustrator",
+      "Premiere",
+      "After Effects",
+      "MSI Afterburner",
+      "HWiNFO64",
+      "Core Temp",
+      "CPU-Z",
+      "GPU-Z",
+      "Wallpaper Engine",
+      "Rainmeter"
+    ],
+    "processes_to_start": [
+      {
+        "name": "OBS Studio",
+        "path": "C:\\Program Files\\obs-studio\\bin\\64bit\\obs64.exe",
+        "window_style": "Normal"
+      },
+      {
+        "name": "Streamlabs",
+        "path": "C:\\Users\\%USERNAME%\\AppData\\Local\\Streamlabs Desktop\\Streamlabs Desktop.exe",
+        "window_style": "Normal"
+      },
+      {
+        "name": "Discord",
+        "path": "C:\\Users\\%USERNAME%\\AppData\\Local\\Discord\\Update.exe --processStart Discord.exe",
+        "window_style": "Minimized"
+      }
+    ],
+    "sound_notification": true,
+    "show_notification": true
+  },
+  "productivity_mode": {
+    "name": "Content Creation Mode",
+    "description": "Full desktop environment for content creation and editing",
+    "resolution": {
+      "width": 2560,
+      "height": 1440,
+      "color_depth": 32,
+      "refresh_rate": 144
+    },
+    "processes_to_kill": [],
+    "processes_to_start": [
+      {
+        "name": "Adobe Creative Cloud",
+        "path": "C:\\Program Files\\Adobe\\Adobe Creative Cloud\\ACC\\Creative Cloud.exe",
+        "window_style": "Minimized"
+      },
+      {
+        "name": "OBS Studio",
+        "path": "C:\\Program Files\\obs-studio\\bin\\64bit\\obs64.exe",
+        "window_style": "Minimized"
+      },
+      {
+        "name": "DaVinci Resolve",
+        "path": "C:\\Program Files\\Blackmagic Design\\DaVinci Resolve\\Resolve.exe",
+        "window_style": "Minimized"
+      },
+      {
+        "name": "PowerToys",
+        "path": "C:\\Program Files\\PowerToys\\PowerToys.exe",
+        "window_style": "Minimized"
+      },
+      {
+        "name": "Everything",
+        "path": "C:\\Program Files\\Everything\\Everything.exe",
+        "window_style": "Minimized"
+      },
+      {
+        "name": "Wallpaper Engine",
+        "path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\wallpaper_engine\\wallpaper32.exe",
+        "window_style": "Minimized"
+      }
+    ],
+    "sound_notification": true,
+    "show_notification": true
+  },
+  "notifications": {
+    "enabled": true,
+    "duration": 3000,
+    "position": "top-right"
+  },
+  "sounds": {
+    "gaming_mode_sound": "C:\\Windows\\Media\\Windows Notify.wav",
+    "productivity_mode_sound": "C:\\Windows\\Media\\Windows Notify.wav"
+  }
+}

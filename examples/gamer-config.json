@@ -1,0 +1,105 @@
+{
+  "version": "1.0.0",
+  "nircmd_path": "C:\\Tools\\NirCmd\\nircmd.exe",
+  "gaming_mode": {
+    "name": "Gaming Mode",
+    "description": "Optimizes system for maximum gaming performance",
+    "resolution": {
+      "width": 1920,
+      "height": 1080,
+      "color_depth": 32,
+      "refresh_rate": 144
+    },
+    "processes_to_kill": [
+      "Discord",
+      "Spotify",
+      "Chrome",
+      "Firefox",
+      "Edge",
+      "Teams",
+      "Slack",
+      "Zoom",
+      "Skype",
+      "Steam",
+      "EpicGamesLauncher",
+      "Origin",
+      "Battle.net",
+      "Wallpaper Engine",
+      "Rainmeter",
+      "PowerToys",
+      "Windhawk",
+      "Everything",
+      "Notion",
+      "Obsidian",
+      "OneNote",
+      "Adobe",
+      "Photoshop",
+      "Illustrator",
+      "Premiere",
+      "After Effects",
+      "OBS",
+      "Streamlabs",
+      "XSplit",
+      "NVIDIA Share",
+      "GeForce Experience",
+      "Radeon Software",
+      "MSI Afterburner",
+      "HWiNFO64",
+      "Core Temp",
+      "CPU-Z",
+      "GPU-Z"
+    ],
+    "processes_to_start": [],
+    "sound_notification": true,
+    "show_notification": true
+  },
+  "productivity_mode": {
+    "name": "Productivity Mode",
+    "description": "Restores full desktop environment for work and creativity",
+    "resolution": {
+      "width": 2560,
+      "height": 1440,
+      "color_depth": 32,
+      "refresh_rate": 144
+    },
+    "processes_to_kill": [],
+    "processes_to_start": [
+      {
+        "name": "Discord",
+        "path": "C:\\Users\\%USERNAME%\\AppData\\Local\\Discord\\Update.exe --processStart Discord.exe",
+        "window_style": "Minimized"
+      },
+      {
+        "name": "Spotify",
+        "path": "C:\\Users\\%USERNAME%\\AppData\\Roaming\\Spotify\\Spotify.exe",
+        "window_style": "Minimized"
+      },
+      {
+        "name": "Wallpaper Engine",
+        "path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\wallpaper_engine\\wallpaper32.exe",
+        "window_style": "Minimized"
+      },
+      {
+        "name": "PowerToys",
+        "path": "C:\\Program Files\\PowerToys\\PowerToys.exe",
+        "window_style": "Minimized"
+      },
+      {
+        "name": "Everything",
+        "path": "C:\\Program Files\\Everything\\Everything.exe",
+        "window_style": "Minimized"
+      }
+    ],
+    "sound_notification": true,
+    "show_notification": true
+  },
+  "notifications": {
+    "enabled": true,
+    "duration": 3000,
+    "position": "top-right"
+  },
+  "sounds": {
+    "gaming_mode_sound": "C:\\Windows\\Media\\Windows Notify.wav",
+    "productivity_mode_sound": "C:\\Windows\\Media\\Windows Notify.wav"
+  }
+}
